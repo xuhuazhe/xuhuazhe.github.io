@@ -10,10 +10,7 @@
     <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
     
     <meta name="viewport" content="width=device-width">
-    <script type="text/javascript" language="JavaScript" src="http://j.maxmind.com/app/geoip.js">
-    </script>
-    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false">
-    </script>
+    
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -147,60 +144,13 @@ vol., no., pp.1-5, 11-14 May 2015</i>. <a href="">[pdf]</a></p></li>
             <li><p><a href="http://www.cs.toronto.edu/~fidler/CSC420.html">Introduction to Image Understanding (Favorite Course)</a></p></li>
             <li><p><a href="https://www.youtube.com/watch?v=NSsKJIzwapA">Scriabin Etude op. 2 No. 1 in C sharp minor played by Horowitz (Favorite Piece of Music)</a></p></li>
 		</ul>
-	<h2>Who searched for me!</h2>
-		<script type="text/javascript">
-            var map;
-            function initialize() {
-                var options =
-    {
-        zoom: 2,
-        center: new google.maps.LatLng(100, 100),//geoip_latitude(), geoip_longitude()),
-        mapTypeId: google.maps.MapTypeId.ROADMAP,
-        mapTypeControl: true,
-        mapTypeControlOptions:
-        {
-            style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
-            poistion: google.maps.ControlPosition.TOP_RIGHT,
-            mapTypeIds: [google.maps.MapTypeId.ROADMAP,
-              google.maps.MapTypeId.TERRAIN,
-              google.maps.MapTypeId.HYBRID,
-              google.maps.MapTypeId.SATELLITE]
-        },
-        navigationControl: true,
-        navigationControlOptions:
-        {
-            style: google.maps.NavigationControlStyle.ZOOM_PAN
-        },
-        scaleControl: true,
-        disableDoubleClickZoom: true,
-        draggable: false,
-        streetViewControl: true,
-        draggableCursor: 'move'
-    };
-                map = new google.maps.Map(document.getElementById("map"), options);
-                // Add Marker and Listener
-                var latlng = new google.maps.LatLng(100, 100);//geoip_latitude(), geoip_longitude());
-                var marker = new google.maps.Marker
-    (
-        {
-            position: latlng,
-            map: map,
-            title: 'Click me'
-        }
-    );
-                var infowindow = new google.maps.InfoWindow({
-                    content: 'You Are Here'
-                });
-                google.maps.event.addListener(marker, 'click', function () {
-                    // Calling the open method of the infoWindow 
-                    infowindow.open(map, marker);
-                });
-            }
-            window.onload = initialize;
-    </script>
-    <div id="map" style="height: 300px; width: 400px" />
-		
-    </div>
+	
+      	<h2>Who searched for me!</h2>
+		<br class="clearfix" />
+                <div id="clustrmaps-widget"></div>
+                <script type="text/javascript">                    var _clustrmaps = { 'url': 'http://hxu.rocks', 'user': 1134134, 'server': '2', 'id': 'clustrmaps-widget', 'version': 1, 'date': '2014-03-01', 'lang': 'zh', 'corners': 'square' }; (function () { var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = 'http://www2.clustrmaps.com/counter/map.js'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x); })();</script><noscript><a href="http://www2.clustrmaps.com/user/acf114e36"><img src="http://www2.clustrmaps.com/stats/maps-no_clusters/hxu.rocks-thumb.jpg" alt="Locations of visitors to this page" /></a></noscript>
+
+            </div>
     <script src="javascripts/scale.fix.js"></script>
   </body>
 </html>
