@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Huazhe Xu</title>
+    <link rel="stylesheet" href="./style/bootstrap.min.css">
+    <link rel="stylesheet" href="./style/styles.css">
+    <style>
+        /* 新增样式 */
+        .member-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 2rem;
+            padding: 2rem 0;
+        }
+        .member-card {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+        .member-card img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 50%;
+            margin: 0 auto 1rem;
+        }
+        .section-spacer {
+            margin: 3rem 0;
+        }
+        .alumni-list {
+            column-count: 3;
+            column-gap: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="my-container">
+        <header class="page-header">
+            <h1>Huazhe Xu</h1>
+            <div class="social-links">
+                <a href="https://scholar.google.com/citations?user=t9HPFawAAAAJ&hl=en">[Google Scholar]</a>
+                <a href="https://twitter.com/HarryXu12">[Twitter]</a>
+            </div>
+
+            <nav class="nav-group" aria-label="Main navigation">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="publication.html" class="nav-link">Publication</a>
+                <a href="group.html" class="nav-link active">Group</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="misc.html" class="nav-link">Misc</a>
+            </nav>
+        </header>
+
+        <!-- PhD Students -->
+        <section class="section-spacer">
+            <h2>PhD Students</h2>
+            <div class="member-grid">
+                <div class="member-card">
+                    <img src="./images/students/changcan2.jpeg" alt="Can Chang">
+                    <div class="member-info">
+                        <a href="http://canchang.top/">Can Chang</a>
+                        <p>2022 - Present</p>
+                    </div>
+                </div>
+
+                <div class="member-card">
+                    <img src="./images/students/kaizhe2.png" alt="Kaizhe Hu">
+                    <div class="member-info">
+                        <a href="http://hukz18.github.io/">Kaizhe Hu</a>
+                        <p>2022 - Present</p>
+                    </div>
+                </div>
+
+                <!-- 其他成员卡片保持相同结构 -->
+
+                <div class="member-card">
+                    <img src="./images/students/huapu2.png" alt="Pu Hua">
+                    <div class="member-info">
+                        <a href="https://piao-0429.github.io/">Pu Hua</a>
+                        <p>2024 - Present</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Master Students -->
+        <section class="section-spacer">
+            <h2>Master Students</h2>
+            <div class="member-grid">
+                <div class="member-card">
+                    <img src="./images/students/tianhai2.jpg" alt="Tianhai Liang">
+                    <div class="member-info">
+                        <a href="https://tinhal.github.io/">Tianhai Liang</a>
+                        <p>2024 - Present</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Alumni -->
+        <section class="section-spacer">
+            <h2>Undergrads/Interns Alumni</h2>
+            <div class="alumni-list">
+                <a href="https://magifeeney.github.io/">Jianfei Ma</a> (Ph.D. at NUS)<br>
+                <a href="https://cheryyunl.github.io/">Yongyuan Liang</a> (Ph.D. at UMaryland)<br>
+                <!-- 其他校友条目保持相同结构 -->
+                <a href="http://linji.me/">Ji Lin</a> (Ph.D. at MIT)<br>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
